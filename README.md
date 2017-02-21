@@ -3,9 +3,15 @@
 This project includes two tasks. The first one is sovlering naked twin sudoku with constrained propogation method, and the second is diagnoal sudoku, which among the two main diagonals, the numbers 1 to 9 should all appear exactly once.
 
 # 1. naked twins
-The naked twins technique is the following. Consider the following puzzle, and look at the two highlighted boxes, 'F3' and 'I3'.
+The naked twins is showed as following. Consider the following puzzle, and look at the two boxes 'F3' and 'I3'.
 
-![naked_twins_p1](https://github.com/daniellu123/aind_Sudoku/tree/daniellu123-patch-1/images/sudoku-board-bare.jpg)
+<img src='images/naked_twins_p1.bmp'>
+
+As shown above, boxes 'F3' and 'I3' belong to same column with same digits. So that, '2' and '3' should be only filled into 'F3' or 'I3', The other boxes with '2' or/and 3 should be removed. 
+
+<img src='images/naked_twins_p2.bmp'>
+
+As you can see, we've removed the values 2 and 3 from the boxes 'D3' and 'E3'. This is the naked twins technique. 
 
 Question
 Q: How do we use constraint propagation to solve the naked twins problem?  
@@ -13,6 +19,8 @@ A: We search the squares whoes length equals 2 and with same digits in one unit.
 
 # 2. Diagnoal sudoku
 A diagonal sudoku is like a regular sudoku, except that among the two main diagonals, the numbers 1 to 9 should all appear exactly once.
+
+<img src='images/diagnoal_sudoku.bmp'>
 
 Question
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
