@@ -5,6 +5,7 @@ This project includes two tasks. The first one is sovlering naked twin sudoku wi
 # 1. naked twins
 The naked twins technique is the following. Consider the following puzzle, and look at the two highlighted boxes, 'F3' and 'I3'.
 
+![naked_twins_p1](https://github.com/daniellu123/aind_Sudoku/tree/daniellu123-patch-1/images/sudoku-board-bare.jpg)
 
 Question
 Q: How do we use constraint propagation to solve the naked twins problem?  
